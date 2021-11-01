@@ -1,0 +1,40 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint-react"
+    ],
+    "rules": {
+        "max-line-length": [true, 120],
+        "object-literal-key-quotes": [true, "consistent"],
+        "import-name": false,
+        "semicolon": [true, "always"],
+        "align": [false],
+        "jsx-no-lambda": [ false ],
+        "no-console": [true],
+        "variable-name": [true, "ban-keywords"],
+        "jsx-no-multiline-js": false,
+        "trailing-comma": [ true, {
+            "multiline": {
+                "arrays": "always",
+                "objects": "always",
+                "imports": "always",
+                "exports": "always",
+                "functions": "ignore"
+              }
+        }]
+    },
+    "jsRules": {
+        "no-empty": true
+    },
+    "rulesDirectory": [],
+    "plugins": [
+        "react"
+    ],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "./config/webpack.config.dev.js"
+            }
+        }
+    }
+}
