@@ -1,0 +1,8 @@
+*
+!.node-version
+!package-lock.json
+!package.json
+!helpers
+!routes
+!api.js
+!db.js
