@@ -44,8 +44,6 @@ and really like the added design benefit it lends a regular form on a website. I
 the formik `Form` a children prop, allowing for the same Form being used across the site using `formikContext`. For the scope of the challenge I did
 not do this.
 
-I have included the UnitySampleProject folder in this repo so that you can easily see the changes I made to `UIBrowser` and `TestListings` in the `Assets` folder.
-
 ## Challenges
 
 Form Inputs:
@@ -65,15 +63,3 @@ I also found a bug with the Field prop in formik that is making the focus highli
 the highlight works, but then it is not saving the values properly to the formik parent. This is something that I would need more time to debug. 
 In my other projects at my current job I built a custom Form Input component that would switch cases based on what type of input was needed, and this 
 did not use Formik's field component, so I had not run into this specific issue before. 
-
-Unity:
-<br>
-I have only a rudimentary understanding of Unity and C#, so figuring out where the proper place to make the `UnityWebRequest`.
-At first, I thought I would make my call directly in the `UIBrowser` file, but then I realized that the `jsonString` was being passed 
-via the `Init` function. `UIBrowser.instance.Init` was being called in the `TestListings` file, so that made the most logical sense to put the code. 
-When I have issues like this, I use the developer's best friend, Google a lot, and I watched the few YouTube videos I could find on UnityWebRequest. 
-I was able to solve most of the errors that were surfacing in Unity, but was unable to correctly deduce how to get my listings to appear instead of the placeholder
-in the Unity game view. I am unsure of whether this an error in my C# code & placement or a lack of clear understanding of how to run a proper test in the engine.
-I am aware that submitting this project with the Unity stage not solved completely is ironic, but I just want to say that I do find using the engine 
-fascinating. I haven't touched C# in over ~6 years, and it was very cool to see that after experience as a Javascript dev, C# made a lot more sense to me
-than when I was teaching it to myself with no coding experience off YouTube!
