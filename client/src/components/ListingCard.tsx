@@ -28,8 +28,9 @@ const ListingCard = ({ listing }: ListingCardProps) => {
                     </div>
                 </div>
             </div>
-    );
+        );
     }
+
     return (
             <div className="border border-snowgrey bg-gray-100 h-84 p-4 rounded-lg w-full">
                 <div className="flex flex-col items-center">
