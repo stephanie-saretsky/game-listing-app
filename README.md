@@ -52,11 +52,9 @@ Designing the form was an interesting challenge as someone who does not know thi
 type it properly based on the schema given for ease of use, but it wasn't immediately clear which fields should be surfaced to the user,
 and which fields should be calculated 'behind the scenes', so to speak. I decided to use this logic for the `images` array,
 as I wasn't entirely sure how `type` and `id` were expected to be populated, and it wouldn't really make sense for the user to 
-have that knowledge either. I decided to go with giving all images `type: 1` like in the test JSON as I googled for a while to find what 
-`Unity Image Type 1` referred to but was unable to find a clear answer. My best guess is that it's an enum that correlates to a type of image file.
-On a similar note, I decided to go with a string input for the `image` form field based on the JSON data given. This field could be change to an
+have that knowledge either. I decided to go with a string input for the `image` form field based on the JSON data given. This field could be change to an
 uploadFile input if the app was wanting to store the files and then assign the urls based on the server. There were a couple other fields
-like `replayJSONURL` that I wasn't sure about but decided to include them as I gave myself idea that the user is a Metacast
+like `replayJSONURL` that I wasn't sure about but decided to include them as I gave myself idea that the user is an
 employee, who is using it to populate the browser for clients, thereby would have that sort of information on hand and could include it in the form.
 
 I also found a bug with the Field prop in formik that is making the focus highlight buggy. If I do not use the field prop
