@@ -7,9 +7,9 @@
 
 Locally:
 <br>
-- Open two terminals. In the first, run `npm run api`. You will see a log that the db is initialized and the server is 
+- Open two terminals. In the first, run `npm start`. You will see a log that the db is initialized and the server is 
 listening on port 3300.
-- In the second terminal, run npm start.
+- In the second terminal, run `npm start`.
 
 Docker:
 <br>
