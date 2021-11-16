@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     getListings();
-  });
+  }, [modalIsOpen]);
 
   if (!gameListings) {
     return <div />;
